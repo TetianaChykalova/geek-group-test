@@ -162,6 +162,32 @@ main {
     margin: 0;
 }
 
+.pages {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 115px 0;
+}
+.pages button {
+    background: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #5C5F60;
+    padding: 7px 13px;
+    margin: 0 10px 0 0;
+}
+.pages-text {
+    border: 1px solid #C4C7C7;
+    border-radius: 100px;
+}
+.pages-num {
+    border: 1px solid #C4C7C7;
+    border-radius: 50%;
+}
+.pages-active {
+    border: 2px solid #000;
+}
+
 
 
 
