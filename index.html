@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+    <!--header-->
+    <header class="header">
+        <header class="header__header">
+            <div class="header__header-content">
+                <img src="img/icons/header-like.png" alt="icon">
+                <img src="img/icons/header-dress.png" alt="icon">
+                <p class="m-0">Брендовий верхній одяг від 899 грн</p>
+            </div>
+        </header>
+        <!--    main content-->
+        <section>
+            <!--        top part-->
+            <div class="container-fluid row justify-content-between align-items-center top-content">
+                <div class="col-2">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+
+                <form action="#" class="col-4">
+                    <label for="header-search"></label>
+                    <input type="text" id="header-search" placeholder="Знайти речі або бренди">
+                    <button>
+                        <img src="img/icons/search.png" alt="icon">
+                    </button>
+                </form>
+                <div class="row col-2">
+                    <button class="col-7">Додати товар</button>
+
+                    <select name="" id="" class="offset-1 col-4">
+                        <option value="">Укр</option>
+                        <option value="">Eng</option>
+                    </select>
+                </div>
+
+                <!--            user-->
+                <div class="col-3 row">
+
+                    <!--                like-->
+                    <div class="col">
+                        <img src="img/icons/like.png" alt="like">
+                    </div>
+                    <!--                message-->
+                    <div class="col">
+                        <img src="img/icons/message.png" alt="messages">
+                    </div>
+                    <!--                order-->
+                    <div class="col">
+                        <img src="img/icons/order.png" alt="order">
+                    </div>
+                    <!--                user-->
+                    <div class="col">
+                        <img src="img/user.png" alt="user">
+                    </div>
+                </div>
+            </div>
+
+            <!--        bottom nav-->
+            <nav class="container-fluid nav bottom-content">
+                <div class="">
+                    <a href="#">
+                        головна
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        каталог
+                    </a></div>
+                <div>
+                    <a href="#">
+                        жінкам
+                    </a></div>
+                <div>
+                    <a href="#">
+                        чоловікам
+                    </a></div>
+                <div>
+                    <a href="#">
+                        головна
+                    </a></div>
+                <div>
+                    <a href="#">
+                        дитячі речі
+                    </a></div>
+                <div>
+                    <a href="#">
+                        бренди
+                    </a></div>
+                <div>
+                    <a href="#">
+                        акції
+                    </a></div>
+                <div>
+                    <a href="#">
+                        аутентифікація
+                    </a></div>
+                <div>
+                    <a href="#">
+                        блог
+                    </a></div>
+            </nav>
+        </section>
+
+    </header>
+
+    <!--    main content-->
+    <main>
+        <div class="container-fluid">
+            <section>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Головна</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Каталог одягу</li>
+                    </ol>
+                </nav>
+            </section>
+
+            <section>
+                <h2>
+                    Каталог одягу
+                </h2>
+            </section>
+
+            <section class="row">
+
+                <!--    filter-->
+                <aside class="col-3">
+                    <h3>Фільтри</h3>
+                    <div class="accordion accordion-flush" id="accordionFilter">
+
+                        <!--                    category-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCategory">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseCategory" aria-expanded="true"
+                                        aria-controls="collapseCategory">
+                                    Категорії
+                                </button>
+                            </h2>
+                            <div id="collapseCategory" class="accordion-collapse collapse show"
+                                 aria-labelledby="headingCategory"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="accordion-body">
+                                    <div>
+                                        <input type="checkbox" id="categoryF">
+                                        <label for="categoryF">Жіночий одяг</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="categoryM">
+                                        <label for="categoryM">Чоловічий одяг</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="categoryC">
+                                        <label for="categoryC">Дитячій одяг</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="categorySale">
+                                        <label for="categorySale">Акційні товари</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                    price-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPrice">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsePrice" aria-expanded="true"
+                                        aria-controls="collapsePrice">
+                                    Ціна
+                                </button>
+                            </h2>
+                            <div id="collapsePrice" class="accordion-collapse collapse show"
+                                 aria-labelledby="headingPrice"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="accordion-body">
+                                    <!--                loading price-->
+                                    <div class="w-100">
+                                        <input class="w-100" type="range" min="980" max="40000" value="10000"
+                                               id="userPrice">
+                                    </div>
+                                    <label for="userPrice">До <span id="sidebar-price-value">10000</span> UAN</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                    seller-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeller">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeller" aria-expanded="true"
+                                        aria-controls="collapseSeller">
+                                    Продавець
+                                </button>
+                            </h2>
+                            <div id="collapseSeller" class="accordion-collapse collapse show"
+                                 aria-labelledby="headingSeller"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="accordion-body">
+                                    <div>
+                                        <input type="checkbox" id="sellerLB">
+                                        <label for="sellerLB">LoveBrand</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="sellerSFM">
+                                        <label for="sellerSFM">SellForMen</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="sellerBD">
+                                        <label for="sellerBD">BrandDear</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="sellerSB">
+                                        <label for="sellerSB">SellBuy</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="sellerAA">
+                                        <label for="sellerAA">AlexAlex</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="sellerDS">
+                                        <label for="sellerDS">DevaSofia</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                    brand-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingBrand">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseBrand" aria-expanded="true"
+                                        aria-controls="collapseBrand">
+                                    Бренд
+                                </button>
+                            </h2>
+                            <div id="collapseBrand" class="accordion-collapse collapse show"
+                                 aria-labelledby="headingBrand"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="accordion-body">
+                                    <div>
+                                        <input type="checkbox" id="brandLV">
+                                        <label for="brandLV">Louis Vuitton</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="brandTB">
+                                        <label for="brandTB">Thom Browne</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="brandEG">
+                                        <label for="brandEG">Elena Ghiselini</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="brandAcne">
+                                        <label for="brandAcne">Acne</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="brandGucci">
+                                        <label for="brandGucci">Gucci</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="brandChanel">
+                                        <label for="brandChanel">Chanel</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="brandHache">
+                                        <label for="brandHache">Hache</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="brandCanali">
+                                        <label for="brandCanali">Canali</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                    sex-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSex">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSex" aria-expanded="true" aria-controls="collapseSex">
+                                    Стать
+                                </button>
+                            </h2>
+                            <div id="collapseSex" class="accordion-collapse collapse show" aria-labelledby="headingSex"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="accordion-body">
+
+                                    <div>
+                                        <input type="checkbox" id="sexF">
+                                        <label for="sexF">Жінкам</label>
+                                        <span>(64)</span>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="sexM">
+                                        <label for="sexM">Чоловікам</label>
+                                        <span>(16)</span>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="sexU">
+                                        <label for="sexU">Унісекс</label>
+                                        <span>(24)</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                    size-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSize">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSize" aria-expanded="true"
+                                        aria-controls="collapseSize">
+                                    Розмір
+                                </button>
+                            </h2>
+                            <div id="collapseSize" class="accordion-collapse collapse show"
+                                 aria-labelledby="headingSize"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="accordion-body">
+                                    <div>
+                                        <input type="checkbox" id="sizeXs">
+                                        <label for="sizeXs">XS</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="sizeS">
+                                        <label for="sizeS">S</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="sizeM">
+                                        <label for="sizeM">M</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="sizeL">
+                                        <label for="sizeL">L</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="sizeXL">
+                                        <label for="sizeXL">XL</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="sizeXXL">
+                                        <label for="sizeXXL">XXL</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                    color-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingColor">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseColor" aria-expanded="true"
+                                        aria-controls="collapseColor">
+                                    Колір
+                                </button>
+                            </h2>
+                            <div id="collapseColor" class="accordion-collapse collapse show"
+                                 aria-labelledby="headingColor"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="accordion-body">
+                                    <div>
+                                        <input type="checkbox" id="colorWhite">
+                                        <label for="colorWhite">White</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="colorBlack">
+                                        <label for="colorBlack">Black</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="colorYellow">
+                                        <label for="colorYellow">Yellow</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="colorGreen">
+                                        <label for="colorGreen">Green</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="colorRed">
+                                        <label for="colorRed">Red</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="colorBlue">
+                                        <label for="colorBlue">Blue</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                    material-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingMaterial">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseMaterial" aria-expanded="true"
+                                        aria-controls="collapseMaterial">
+                                    Матеріал
+                                </button>
+                            </h2>
+                            <div id="collapseMaterial" class="accordion-collapse collapse show"
+                                 aria-labelledby="headingMaterial"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="accordion-body">
+                                    <div>
+                                        <input type="checkbox" id="matAtlas">
+                                        <label for="matAtlas">Атлас</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="matCotton">
+                                        <label for="matCotton">Бавовна</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="matLinen">
+                                        <label for="matLinen">Льон</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="matSkin">
+                                        <label for="matSkin">Шкіра</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                    season-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeason">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeason" aria-expanded="true"
+                                        aria-controls="collapseSeason">
+                                    Сезон
+                                </button>
+                            </h2>
+                            <div id="collapseSeason" class="accordion-collapse collapse show"
+                                 aria-labelledby="headingSeason"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="accordion-body">
+                                    <div>
+                                        <input type="checkbox" id="seasonSpring">
+                                        <label for="seasonSpring">Весна</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="seasonSummer">
+                                        <label for="seasonSummer">Літо</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="seasonFall">
+                                        <label for="seasonFall">Осінь</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="seasonWinter">
+                                        <label for="seasonWinter">Зима</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--                    style-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingStyle">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseStyle" aria-expanded="true"
+                                        aria-controls="collapseStyle">
+                                    Стиль
+                                </button>
+                            </h2>
+                            <div id="collapseStyle" class="accordion-collapse collapse show"
+                                 aria-labelledby="headingStyle"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="accordion-body">
+                                    <div>
+                                        <input type="checkbox" id="styleCasual">
+                                        <label for="styleCasual">Казуальний</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="styleBusiness">
+                                        <label for="styleBusiness">Діловий</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="styleSport">
+                                        <label for="styleSport">Спортивний</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="styleClassic">
+                                        <label for="styleClassic">Класичний</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="styleExotics">
+                                        <label for="styleExotics">Екзотика</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
+
+                <!--    cards-->
+                <div class="col-9 d-block">
+                    <!--        sort-->
+                    <div>
+                        <label for="sort">Сортувати за:</label>
+                        <select name="" id="sort">
+                            <option value="">За замовчуванням</option>
+                            <option value="">За зростанням ціни</option>
+                            <option value="">За спаданням ціни</option>
+                        </select>
+                    </div>
+
+                    <!--        cards-->
+                    <div class="cards" id="cards-list"></div>
+                </div>
+            </section>
+
+            <!--    pages-->
+            <section>
+                <div>
+                    <button>Попередня</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>Наступна</button>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!--    footer-->
+    <footer class="footer">
+        <section class="container-fluid">
+            <div class="row">
+                <div class="footer_col col">
+                    <a href="#">Довідка для покупців</a>
+                    <a href="#">Отримати підтримку</a>
+                    <a href="#">Як купувати</a>
+                    <a href="#">Як залишити корисний відгук</a>
+                    <a href="#">Програма Захисту Покупців</a>
+                    <a href="#">Рекомендації з безпечних покупок</a>
+                </div>
+                <div class="footer_col col">
+                    <a href="#">Довідка для продавців</a>
+                    <a href="#">Як почати продавати</a>
+                    <a href="#">Тарифи</a>
+                    <a href="#">Угода користувача</a>
+                    <a href="#">Політика конфіденційності</a>
+                    <a href="#">Правила користування порталом</a>
+                    <a href="#">Бонусна програма</a>
+                </div>
+                <div class="footer_col col">
+                    <a href="#">Про нас</a>
+                    <a href="#">Довідка та FAQ</a>
+                    <a href="#">Захист легальності контенту</a>
+                    <a href="#">Адміністрація</a>
+                    <a href="#">Вакансії</a>
+                </div>
+                <div class="footer_col col">
+                    <p>Мобільний додаток</p>
+                    <a href="#">
+                        <img src="img/google-play.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </section>
+    </footer>
+</div>
+
+
+<template id="card-template-top">
+    <div class="card">
+        <img src="{{image-url}}" class="card-img-top" alt="article">
+        <img src="img/icons/like.png" class="card-like" alt="">
+        <div class="card-body">
+            <p class="card-top" id="card-top">{{top}}</p>
+            <p class="card-brand">{{brand}}</p>
+            <h5 class="card-title">{{name}}</h5>
+            <div class="row justify-content-between card-bottom">
+                <div class="col">
+                    <p class="card-price price-with-sale">{{price}}</p>
+                    <p class="card-sale">{{sale}}</p>
+                </div>
+                <div class="col">
+                    <div class="card-geo">
+                        <img src="img/icons/local.png" alt="" class="d-inline">
+                        <p class="d-inline">{{geo}}</p>
+                    </div>
+                    <div class="card-seller">
+                        <img src="{{seller-photo}}" alt="" class="d-inline">
+                        <p class="d-inline">{{seller-name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="card-template">
+    <div class="card">
+        <img src="{{image-url}}" class="card-img-top" alt="article">
+        <img src="img/icons/like.png" class="card-like" alt="">
+        <div class="card-not-top"></div>
+        <div class="card-body">
+            <p class="card-brand">{{brand}}</p>
+            <h5 class="card-title">{{name}}</h5>
+            <div class="row justify-content-between card-bottom">
+                <div class="col">
+                    <p class="card-price price-with-sale">{{price}}</p>
+                    <p class="card-sale">{{sale}}</p>
+                </div>
+                <div class="col">
+                    <div class="card-geo">
+                        <img src="img/icons/local.png" alt="" class="d-inline">
+                        <p class="d-inline">{{geo}}</p>
+                    </div>
+                    <div class="card-seller">
+                        <img src="{{seller-photo}}" alt="" class="d-inline">
+                        <p class="d-inline">{{seller-name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/mustache.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
