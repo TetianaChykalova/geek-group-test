@@ -107,6 +107,10 @@ let cardsList = document.querySelector('#cards-list');
 let cardTemplate = document.querySelector('#card-template').innerHTML;
 let cardTemplateTop = document.querySelector('#card-template-top').innerHTML;
 
+let sliderFilterPrice = document.querySelector('#slider-price');
+let priceValueFrom = document.querySelector('#price-from');
+let priceValueTo = document.querySelector('#price-to');
+
 //cards
 function addTopArticle() {
     for (let i = 0; i < topArticle.length; i++) {
@@ -127,10 +131,17 @@ function addArticle() {
 addArticle();
 
 //price
-let filterPrice = document.getElementById("userPrice");
-let filterPriceValue = document.getElementById("sidebar-price-value");
-filterPriceValue.innerHTML = filterPrice.value;
+noUiSlider.create(sliderFilterPrice, {
+    start: [980, 20465],
+    step: 10,
+    range: {
+        'min': 10,
+        'max': 40000
+    },
+});
+//console.log(sliderFilterPrice.noUiSlider.get()); --> Array [0: 'min', 1: 'max']
 
-filterPrice.oninput = function() {
-    filterPriceValue.innerHTML = this.value;
-}
+// let minPrice = +sliderFilterPrice.noUiSlider.get()[0];
+// let maxPrice = +sliderFilterPrice.noUiSlider.get()[1];
+
+// sliderFilterPrice.noUiSlider.set([minPrice, maxPrice, true, true])
