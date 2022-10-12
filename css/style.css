@@ -51,6 +51,18 @@ main {
     flex: 1 1 auto;
 }
 
+.section-breadcrumb {
+    margin: 0 0 40px 0;
+}
+
+.section-page {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    color: #2D3132;
+    margin: 0 0 32px 0;
+}
+
 .filters h3 {
     font-weight: 400;
     font-size: 22px;
@@ -154,6 +166,32 @@ main {
 /*input[type=range] + .thumb.active .value {*/
 /*    color: #fff;*/
 /*}*/
+
+.article-sort {
+    margin: 0 0 25px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.article-sort label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #5C5F60;
+    margin: 0 12px 0 0;
+}
+.article-sort select {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #2D3132;
+    background: #EFF1F1;
+    border-radius: 100px;
+    padding: 8px 0;
+    width: 170px;
+    text-align: center;
+}
 
 .cards {
     display: flex;
