@@ -175,6 +175,7 @@ main {
     width: 17px;
     height: 17px;
     margin: 0 17px 0 0;
+    accent-color: black;
 }
 .accordion .accordion-body label {
     font-weight: 400;
