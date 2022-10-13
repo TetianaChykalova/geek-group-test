@@ -107,6 +107,10 @@ let cardsList = document.querySelector('#cards-list');
 let cardTemplate = document.querySelector('#card-template').innerHTML;
 let cardTemplateTop = document.querySelector('#card-template-top').innerHTML;
 
+let burgerMenu = document.querySelector('#burger-menu');
+let burgerLine = document.querySelector('#burger-line');
+let burgerContent = document.querySelector('#burger-content');
+
 let sliderFilterPrice = document.querySelector('#slider-price');
 let priceValueFrom = document.querySelector('#price-from');
 let priceValueTo = document.querySelector('#price-to');
@@ -129,6 +133,13 @@ function addArticle() {
     }
 }
 addArticle();
+
+//burger
+burgerLine.addEventListener('click', activeBurger)
+function activeBurger () {
+    burgerContent.classList.toggle('active');
+    document.querySelector('body').classList.toggle('overflow-hidden');
+}
 
 //price
 noUiSlider.create(sliderFilterPrice, {

@@ -1,0 +1,119 @@
+@media (max-width: 1200px) {
+    .header__search {
+        width: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        flex: 0 1 48%;
+        padding: 50px 20px 20px;
+        margin: 0 0 24px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .burger__menu {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .header__logo {
+        display: none;
+    }
+    body.overflow-hidden {
+        overflow: hidden;
+    }
+    .burger__menu {
+        background: #6d1dee;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 0 10px;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    .burger__line span,
+    .burger__line:before,
+    .burger__line:after {
+        content: '';
+        height: 4px;
+        width: 40px;
+        background: #fff;
+        right: 10px;
+        z-index: 5;
+        position: fixed;
+    }
+    .burger__line:before {
+        top: 15px;
+    }
+    .burger__line span {
+        top: 25px;
+    }
+    .burger__line:after {
+        top: 35px;
+    }
+    .header__bottom-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 100vh;
+        padding: 70px 0 0 0;
+        position: absolute;
+        top: 0;
+        right: -768px;
+        background: #e9f0ff;
+        z-index: 1;
+        transition: all 0.5s ease-in 0s;
+    }
+    .active {
+        right: 0;
+    }
+    .header__bottom-content div {
+        padding: 8px 16px;
+    }
+    .header__bottom-content div a {
+        padding: 0;
+    }
+    .header__bottom-content .active-nav {
+        border-bottom: none;
+    }
+    .header__bottom-content .active-nav:after{
+        content: '';
+        height: 2px;
+        background: #000;
+        width: 100%;
+        margin: 5px 0 0 0;
+    }
+    .card {
+        flex: 0 1 100%;
+        padding: 50px 20px 20px;
+        margin: 0 0 24px 0;
+    }
+    .header__top-content {
+        flex-wrap: wrap;
+    }
+    .header__user {
+        margin: 20px 0 0 0;
+    }
+    .pages {
+        flex-wrap: wrap;
+    }
+    .footer {
+        padding: 35px 0;
+    }
+    .footer__top {
+        display: flex;
+        flex-direction: column;
+        padding:0;
+        margin: 0 0 35px 0;
+    }
+    .footer__top div {
+        margin: 0 0 35px 0;
+    }
+}

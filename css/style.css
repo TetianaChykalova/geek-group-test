@@ -1,15 +1,20 @@
 @import "nullstyle.css";
 
 /*general*/
+body {
+    overflow-x: hidden;
+}
 .container-fluid {
-    padding: 0;
+    padding: 0 3px;
     max-width: 1320px;
+    width: 100%;
     margin: 0 auto;
 }
 .wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    max-width: 100%;
 }
 
 /*HEADER*/
@@ -32,7 +37,7 @@
 }
 
 /*top part*/
-.top-content {
+.header__top-content {
     padding: 23px 0;
     border-bottom: 1px solid #E0E3E3;
     display: flex;
@@ -80,7 +85,7 @@
 /*user*/
 .header__user {}
 .header__user div {
-    margin: 0 20px 0 0;
+    margin: 0 10px 0 0;
 }
 .header__user span {
     position: absolute;
@@ -97,28 +102,20 @@
 }
 
 /*bottom part*/
-.bottom-content {
-    padding: 16px 0;
-}
-.bottom-content div {
+.header__bottom-content {}
+.header__bottom-content div {
     padding: 0 16px;
 }
-.bottom-content div a {
+.header__bottom-content div a {
     text-transform: uppercase;
     color: #444748;
     font-weight: 500;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    position: relative;
+    padding: 16px 0 17px 0;
 }
-.bottom-content .active-nav:after {
-    content: '';
-    height: 2px;
-    width: 130%;
-    background: #000;
-    position: absolute;
-    bottom: -17px;
-    left: -15%;
+.header__bottom-content .active-nav {
+    border-bottom: 2px #000 solid;
 }
 
 
@@ -190,6 +187,7 @@ main {
     font-size: 14px;
     line-height: 150%;
     color: #747778;
+    margin: 0 0 0 auto;
 }
 .accordion .accordion-body div {
     display: flex;
@@ -383,7 +381,7 @@ main {
     line-height: 150%;
     color: #5C5F60;
     padding: 7px 13px;
-    margin: 0 10px 0 0;
+    margin: 0 10px 10px 0;
 }
 .pages-text {
     border: 1px solid #C4C7C7;
@@ -422,5 +420,8 @@ main {
     color: #2D3132;
 }
 .footer_col a:last-child {
+    margin: 0;
+}
+.footer__bottom p {
     margin: 0;
 }

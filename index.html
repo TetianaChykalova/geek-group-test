@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/nouislider.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+
     <link rel="shortcut icon" href="img/icons/small-logo.ico">
     <title>Monvalise</title>
 </head>
@@ -16,6 +18,15 @@
 <div class="wrapper">
     <!--header-->
     <header class="header">
+        <div class="burger__menu" id="burger-menu">
+            <div>
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="burger__line" id="burger-line">
+                <span></span>
+            </div>
+        </div>
+
         <!--        temporary header-->
         <header class="header__header">
             <div class="header__header-content">
@@ -24,12 +35,12 @@
                 <p class="m-0">Брендовий верхній одяг від 899 грн</p>
             </div>
         </header>
-        <!--    main content-->
+        <!--    main header-->
         <section>
             <!--        top part-->
-            <div class="container-fluid align-items-center top-content">
+            <div class="container-fluid align-items-center header__top-content">
                 <!--                logo-->
-                <div class="">
+                <div class="header__logo">
                     <img src="img/logo.png" alt="logo">
                 </div>
 
@@ -84,7 +95,7 @@
             </div>
 
             <!--        bottom nav-->
-            <nav class="container-fluid nav bottom-content">
+            <nav class="container-fluid nav header__bottom-content" id="burger-content">
                 <div class="">
                     <a href="#">
                         головна
@@ -155,7 +166,7 @@
             <section class="row">
 
                 <!--    filter-->
-                <aside class="col-3 filters">
+                <aside class="col-md-3 col-5 filters">
                     <h3>Фільтри</h3>
                     <div class="accordion accordion-flush" id="accordionFilter">
 
@@ -571,7 +582,7 @@
                 </aside>
 
                 <!--    cards-->
-                <div class="col-9 d-block articles">
+                <div class="col-md-9 col-7 d-block articles">
                     <!--        sort-->
                     <div class="article-sort">
                         <label for="sort">Сортувати за:</label>
@@ -645,7 +656,7 @@
                 </div>
             </div>
             <!--            bottom part-->
-            <div>
+            <div class="footer__bottom">
                 <p class="small">© 2022 Monvalise</p>
             </div>
         </section>
