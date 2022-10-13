@@ -140,6 +140,7 @@ function activeBurger () {
 //price
 noUiSlider.create(sliderFilterPrice, {
     start: [980, 20465],
+    connect: true,
     step: 10,
     range: {
         'min': 10,
