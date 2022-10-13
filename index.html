@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/nouislider.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icons/small-logo.ico">
     <title>Monvalise</title>
 </head>
 <body>
@@ -25,41 +26,50 @@
         <!--    main content-->
         <section>
             <!--        top part-->
-            <div class="container-fluid row justify-content-between align-items-center top-content">
-                <div class="col-2">
+            <div class="container-fluid align-items-center top-content">
+                <div class="">
                     <img src="img/logo.png" alt="logo">
                 </div>
 
-                <form action="#" class="col-4">
-                    <label for="header-search"></label>
-                    <input type="text" id="header-search" placeholder="Знайти речі або бренди">
+                <form action="#" class=" header__search">
                     <button>
                         <img src="img/icons/search.png" alt="icon">
                     </button>
+                    <label for="header-search"></label>
+                    <input type="text" id="header-search" placeholder="Знайти речі або бренди">
                 </form>
-                <div class="row col-2">
-                    <button class="col-7">Додати товар</button>
 
-                    <select name="" id="" class="offset-1 col-4">
-                        <option value="">Укр</option>
-                        <option value="">Eng</option>
-                    </select>
+                <div class="row align-items-center">
+                    <div class="col-8">
+                        <button class="header__add-order">Додати товар</button>
+                    </div>
+
+                    <div class="col-4 header__land">
+                        <label for="lang-select"></label>
+                        <select name="" id="lang-select">
+                            <option value="ua">Укр</option>
+                            <option value="en">Eng</option>
+                        </select>
+                    </div>
                 </div>
 
                 <!--            user-->
-                <div class="col-3 row">
+                <div class="row align-items-center header__user">
 
                     <!--                like-->
-                    <div class="col">
+                    <div class="col position-relative">
                         <img src="img/icons/like.png" alt="like">
+                        <span>8</span>
                     </div>
                     <!--                message-->
-                    <div class="col">
+                    <div class="col position-relative">
                         <img src="img/icons/message.png" alt="messages">
+                        <span class="bg-danger text-white">3</span>
                     </div>
                     <!--                order-->
-                    <div class="col">
+                    <div class="col position-relative">
                         <img src="img/icons/order.png" alt="order">
+                        <span>3</span>
                     </div>
                     <!--                user-->
                     <div class="col">
@@ -76,7 +86,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="#">
+                    <a href="#" class="active-nav">
                         каталог
                     </a></div>
                 <div>
@@ -123,7 +133,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Головна</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Каталог одягу</li>
+                        <li class="breadcrumb-item active active-link" aria-current="page">Каталог одягу</li>
                     </ol>
                 </nav>
             </section>

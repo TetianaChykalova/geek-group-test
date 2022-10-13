@@ -29,20 +29,85 @@
 .top-content {
     padding: 23px 0;
     border-bottom: 1px solid #E0E3E3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+.header__search {
+    border: 2px solid #E0E3E3;
+    border-radius: 4px;
+    padding: 11px 0 11px 17px;
+    width: 600px;
+}
+.header__search input {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #5C5F60;
+}
+.header__search button {
+    background: #fff;
+    width: 16px;
+    height: 16px;
+    margin: 0 18px 0 0;
+}
+
+.header__add-order {
+    background: #2D3132;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding: 15px 0;
+    width: 130px;
+}
+.header__land select {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #2D3132;
+    background: #fff;
+    padding-right: 5px;
+}
+
+.header__user {}
+.header__user span {
+    position: absolute;
+    top: -13px;
+    right: -2px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    color: #2D3132;
+    background: #EFF1F1;
+    border: 2px solid #FFFFFF;
+    border-radius: 13px;
+    padding: 2px 6px;
+}
+
+
 .bottom-content {
     padding: 16px 0;
 }
 .bottom-content div {
-    margin: 0 32px 0 0;
+    padding: 0 16px;
 }
-.bottom-content div:last-child {
-    margin: 0;
-}
-.bottom-content div  a {
+.bottom-content div a {
     text-transform: uppercase;
     color: #444748;
     font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.bottom-content .active-nav:after {
+    content: '';
+    height: 2px;
+    width: 130%;
+    background: #000;
+    position: absolute;
+    bottom: -17px;
+    left: -15%;
 }
 
 
@@ -53,6 +118,18 @@ main {
 
 .section-breadcrumb {
     margin: 0 0 40px 0;
+}
+.breadcrumb-item a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #2D3132;
+}
+.active-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #747778;
 }
 
 .section-page {
