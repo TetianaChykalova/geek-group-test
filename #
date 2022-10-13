@@ -1,27 +1,10 @@
-<div class="card">
-    <img src="img/article-01.png" class="card-img-top" alt="article">
-    <img src="img/icons/like.png" class="card-like" alt="">
-    <div class="card-body">
-        <p class="card-top">TOP</p>
-        <p class="card-brand">Louis Vuitton</p>
-        <h5 class="card-title">Темно-сині джинси Louis Vuitton</h5>
-        <div class="row justify-content-between card-bottom">
-            <div class="col">
-                <p class="card-price price-with-sale">5 499</p>
-                <p class="card-sale">3 799</p>
-            </div>
-            <div class="col">
-                <div class="card-geo">
-                    <img src="img/icons/local.png" alt="" class="d-inline">
-                    <p class="d-inline">Kherson</p>
-                </div>
-                <div class="card-seller">
-                    <img src="img/seller-1.png" alt="" class="d-inline">
-                    <p class="d-inline">LoveBrand</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
 </div>

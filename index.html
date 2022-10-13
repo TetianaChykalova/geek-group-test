@@ -16,6 +16,7 @@
 <div class="wrapper">
     <!--header-->
     <header class="header">
+        <!--        temporary header-->
         <header class="header__header">
             <div class="header__header-content">
                 <img src="img/icons/header-like.png" alt="icon">
@@ -27,10 +28,12 @@
         <section>
             <!--        top part-->
             <div class="container-fluid align-items-center top-content">
+                <!--                logo-->
                 <div class="">
                     <img src="img/logo.png" alt="logo">
                 </div>
 
+                <!--                search-->
                 <form action="#" class=" header__search">
                     <button>
                         <img src="img/icons/search.png" alt="icon">
@@ -40,10 +43,12 @@
                 </form>
 
                 <div class="row align-items-center">
+                    <!--                    add order-->
                     <div class="col-8">
                         <button class="header__add-order">Додати товар</button>
                     </div>
 
+                    <!--                    choose lang-->
                     <div class="col-4 header__land">
                         <label for="lang-select"></label>
                         <select name="" id="lang-select">
@@ -126,9 +131,10 @@
 
     </header>
 
-    <!--    main content-->
+    <!--    main-->
     <main>
         <div class="container-fluid">
+            <!--            breadcrumb-->
             <section class="section-breadcrumb">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -138,12 +144,14 @@
                 </nav>
             </section>
 
+            <!--            title-->
             <section class="section-page">
                 <h2>
                     Каталог одягу
                 </h2>
             </section>
 
+            <!--            main content-->
             <section class="row">
 
                 <!--    filter-->
@@ -162,7 +170,7 @@
                             </h2>
                             <div id="collapseCategory" class="accordion-collapse collapse"
                                  aria-labelledby="headingCategory">
-<!--                                 data-bs-parent="#accordionFilter">-->
+                                <!--                                 data-bs-parent="#accordionFilter">-->
 
                                 <div class="accordion-body">
                                     <div>
@@ -200,7 +208,7 @@
                             </h2>
                             <div id="collapsePrice" class="accordion-collapse collapse"
                                  aria-labelledby="headingPrice">
-<!--                                 data-bs-parent="#accordionFilter">-->
+                                <!--                                 data-bs-parent="#accordionFilter">-->
                                 <div class="accordion-body">
                                     <div id="slider-price"></div>
                                     <div class="row justify-content-between price__info">
@@ -228,7 +236,7 @@
                             </h2>
                             <div id="collapseSeller" class="accordion-collapse collapse"
                                  aria-labelledby="headingSeller">
-<!--                                 data-bs-parent="#accordionFilter">-->
+                                <!--                                 data-bs-parent="#accordionFilter">-->
                                 <div class="accordion-body">
                                     <div>
                                         <input type="checkbox" id="sellerLB">
@@ -275,7 +283,7 @@
                             </h2>
                             <div id="collapseBrand" class="accordion-collapse collapse"
                                  aria-labelledby="headingBrand">
-<!--                                 data-bs-parent="#accordionFilter">-->
+                                <!--                                 data-bs-parent="#accordionFilter">-->
                                 <div class="accordion-body">
                                     <div>
                                         <input type="checkbox" id="brandLV">
@@ -329,7 +337,7 @@
                                 </button>
                             </h2>
                             <div id="collapseSex" class="accordion-collapse collapse" aria-labelledby="headingSex">
-<!--                                 data-bs-parent="#accordionFilter">-->
+                                <!--                                 data-bs-parent="#accordionFilter">-->
                                 <div class="accordion-body">
 
                                     <div>
@@ -365,7 +373,7 @@
                             </h2>
                             <div id="collapseSize" class="accordion-collapse collapse"
                                  aria-labelledby="headingSize">
-<!--                                 data-bs-parent="#accordionFilter">-->
+                                <!--                                 data-bs-parent="#accordionFilter">-->
                                 <div class="accordion-body">
                                     <div>
                                         <input type="checkbox" id="sizeXs">
@@ -411,7 +419,7 @@
                             </h2>
                             <div id="collapseColor" class="accordion-collapse collapse"
                                  aria-labelledby="headingColor">
-<!--                                 data-bs-parent="#accordionFilter">-->
+                                <!--                                 data-bs-parent="#accordionFilter">-->
                                 <div class="accordion-body">
                                     <div>
                                         <input type="checkbox" id="colorWhite">
@@ -457,7 +465,7 @@
                             </h2>
                             <div id="collapseMaterial" class="accordion-collapse collapse"
                                  aria-labelledby="headingMaterial">
-<!--                                 data-bs-parent="#accordionFilter">-->
+                                <!--                                 data-bs-parent="#accordionFilter">-->
                                 <div class="accordion-body">
                                     <div>
                                         <input type="checkbox" id="matAtlas">
@@ -493,7 +501,7 @@
                             </h2>
                             <div id="collapseSeason" class="accordion-collapse collapse"
                                  aria-labelledby="headingSeason">
-<!--                                 data-bs-parent="#accordionFilter">-->
+                                <!--                                 data-bs-parent="#accordionFilter">-->
                                 <div class="accordion-body">
                                     <div>
                                         <input type="checkbox" id="seasonSpring">
@@ -529,7 +537,7 @@
                             </h2>
                             <div id="collapseStyle" class="accordion-collapse collapse"
                                  aria-labelledby="headingStyle">
-<!--                                 data-bs-parent="#accordionFilter">-->
+                                <!--                                 data-bs-parent="#accordionFilter">-->
                                 <div class="accordion-body">
                                     <div>
                                         <input class="filter-input" type="checkbox" id="styleCasual">
@@ -600,7 +608,8 @@
     <!--    footer-->
     <footer class="footer">
         <section class="container-fluid">
-            <div class="row footer__bottom">
+            <!--            top part-->
+            <div class="row footer__top">
                 <div class="footer_col col">
                     <a href="#">Довідка для покупців</a>
                     <a href="#">Отримати підтримку</a>
@@ -609,6 +618,7 @@
                     <a href="#">Програма Захисту Покупців</a>
                     <a href="#">Рекомендації з безпечних покупок</a>
                 </div>
+
                 <div class="footer_col col">
                     <a href="#">Довідка для продавців</a>
                     <a href="#">Як почати продавати</a>
@@ -618,6 +628,7 @@
                     <a href="#">Правила користування порталом</a>
                     <a href="#">Бонусна програма</a>
                 </div>
+
                 <div class="footer_col col">
                     <a href="#">Про нас</a>
                     <a href="#">Довідка та FAQ</a>
@@ -625,6 +636,7 @@
                     <a href="#">Адміністрація</a>
                     <a href="#">Вакансії</a>
                 </div>
+
                 <div class="footer_col col">
                     <p>Мобільний додаток</p>
                     <a href="#">
@@ -632,6 +644,7 @@
                     </a>
                 </div>
             </div>
+            <!--            bottom part-->
             <div>
                 <p class="small">© 2022 Monvalise</p>
             </div>
@@ -640,6 +653,7 @@
 </div>
 
 
+<!--TEMPLATES-->
 <template id="card-template-top">
     <div class="card">
         <img src="{{image-url}}" class="card-img-top" alt="article">
