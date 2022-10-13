@@ -138,15 +138,24 @@ function activeBurger () {
 }
 
 //price
-noUiSlider.create(sliderFilterPrice, {
-    start: [980, 20465],
-    connect: true,
-    step: 10,
-    range: {
-        'min': 10,
-        'max': 40000
-    },
-});
+if(sliderFilterPrice) {
+    noUiSlider.create(sliderFilterPrice, {
+        start: [980, 20465],
+        connect: true,
+        step: 10,
+        range: {
+            'min': 10,
+            'max': 40000
+        },
+    });
+
+    let priceValue = [priceValueFrom, priceValueTo];
+
+    sliderFilterPrice.noUiSlider.on('update', function (values, handle) {
+        priceValue[handle].textContent = Math.round(values[handle]);
+    })
+}
+
 //console.log(sliderFilterPrice.noUiSlider.get()); --> Array [0: 'min', 1: 'max']
 
 // let minPrice = +sliderFilterPrice.noUiSlider.get()[0];
