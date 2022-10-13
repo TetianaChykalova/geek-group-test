@@ -1,6 +1,6 @@
 @media (max-width: 1200px) {
     .header__search {
-        width: 300px;
+        width: 350px;
     }
 }
 
@@ -10,6 +10,12 @@
         padding: 50px 20px 20px;
         margin: 0 0 24px 0;
     }
+    .header__search {
+        width: 300px;
+    }
+    .header__logo {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
@@ -18,8 +24,8 @@
     }
 }
 @media (max-width: 767px) {
-    .header__logo {
-        display: none;
+    .header__search {
+        width: 250px;
     }
     body.overflow-hidden {
         overflow: hidden;

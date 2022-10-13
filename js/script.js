@@ -1,7 +1,6 @@
-const topArticle = [
+const allArticle = [
     {
         'image-url': 'img/article-01.png',
-        'top': 'топ',
         'brand': 'Louis Vuitton',
         'name': 'Темно-сині джинси Louis Vuitton',
         'price': '5 499',
@@ -9,11 +8,11 @@ const topArticle = [
         'geo': 'Херсон',
         'seller-photo': 'img/seller-1.png',
         'seller-name': 'LoveBrand',
+        'top': 'img/icons/top.png',
     },
 
     {
         'image-url': 'img/article-02.png',
-        'top': 'топ',
         'brand': 'Thom Browne',
         'name': 'Чорний піджак Thom Browne',
         'price': '11 999',
@@ -21,9 +20,9 @@ const topArticle = [
         'geo': 'Хмельницький',
         'seller-photo': 'img/seller-2.png',
         'seller-name': 'SellForMen',
+        'top': 'img/icons/top.png',
     },
-]
-const allArticle = [
+
     {
         'image-url': 'img/article-03.png',
         'brand': 'Canali',
@@ -33,6 +32,7 @@ const allArticle = [
         'geo': 'Хмельницький',
         'seller-photo': 'img/seller-2.png',
         'seller-name': 'SellForMen',
+        'top': 'img/icons/no-top.png',
     },
 
     {
@@ -44,18 +44,20 @@ const allArticle = [
         'geo': 'Дніпро',
         'seller-photo': 'img/user.png',
         'seller-name': 'BrandDear',
+        'top': 'img/icons/no-top.png',
     },
 
     {
         'image-url': 'img/article-05.png',
         'brand': 'Elena Ghiselini',
-        'eco': 'organic',
+        'organic': 'img/icons/organic.png',
         'name': 'Сумка з декором Elena Ghiselini',
         'price': '1 999',
         'sale': '1 599',
         'geo': 'Дніпро',
         'seller-photo': 'img/user.png',
         'seller-name': 'BrandDear',
+        'top': 'img/icons/no-top.png',
     },
 
     {
@@ -67,6 +69,7 @@ const allArticle = [
         'geo': 'Київ',
         'seller-photo': 'img/seller-3.png',
         'seller-name': 'AlexAlex',
+        'top': 'img/icons/no-top.png',
     },
 
     {
@@ -78,6 +81,7 @@ const allArticle = [
         'geo': 'Рівне',
         'seller-photo': 'img/seller-4.png',
         'seller-name': 'SellBuy',
+        'top': 'img/icons/no-top.png',
     },
 
     {
@@ -89,6 +93,7 @@ const allArticle = [
         'geo': 'Кропивницький',
         'seller-photo': 'img/seller-5.png',
         'seller-name': 'DevaSofia',
+        'top': 'img/icons/no-top.png',
     },
 
     {
@@ -100,12 +105,12 @@ const allArticle = [
         'geo': 'Київ',
         'seller-photo': 'img/seller-1.png',
         'seller-name': 'LoveBrand',
+        'top': 'img/icons/no-top.png',
     },
 ]
 
 let cardsList = document.querySelector('#cards-list');
 let cardTemplate = document.querySelector('#card-template').innerHTML;
-let cardTemplateTop = document.querySelector('#card-template-top').innerHTML;
 
 let burgerMenu = document.querySelector('#burger-menu');
 let burgerLine = document.querySelector('#burger-line');
@@ -116,15 +121,6 @@ let priceValueFrom = document.querySelector('#price-from');
 let priceValueTo = document.querySelector('#price-to');
 
 //cards
-function addTopArticle() {
-    for (let i = 0; i < topArticle.length; i++) {
-        const articleItem = topArticle[i];
-        let html = Mustache.render(cardTemplateTop, articleItem);
-        cardsList.insertAdjacentHTML("beforeend", html);
-    }
-}
-addTopArticle();
-
 function addArticle() {
     for (let i = 0; i < allArticle.length; i++) {
         const articleItem = allArticle[i];

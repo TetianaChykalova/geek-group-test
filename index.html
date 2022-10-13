@@ -665,40 +665,15 @@
 
 
 <!--TEMPLATES-->
-<template id="card-template-top">
-    <div class="card">
-        <img src="{{image-url}}" class="card-img-top" alt="article">
-        <img src="img/icons/like.png" class="card-like" alt="">
-        <div class="card-body">
-            <p class="card-top" id="card-top">{{top}}</p>
-            <p class="card-brand">{{brand}}</p>
-            <h5 class="card-title">{{name}}</h5>
-            <div class="row justify-content-between card-bottom">
-                <div class="col">
-                    <p class="card-price price-with-sale">{{price}}</p>
-                    <p class="card-sale">{{sale}}</p>
-                </div>
-                <div class="col">
-                    <div class="card-geo">
-                        <img src="img/icons/local.png" alt="" class="d-inline">
-                        <p class="d-inline">{{geo}}</p>
-                    </div>
-                    <div class="card-seller">
-                        <img src="{{seller-photo}}" alt="" class="d-inline">
-                        <p class="d-inline">{{seller-name}}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</template>
-
 <template id="card-template">
     <div class="card">
         <img src="{{image-url}}" class="card-img-top" alt="article">
         <img src="img/icons/like.png" class="card-like" alt="">
-        <div class="card-not-top"></div>
+        <img src="{{organic}}" class="card-organic" alt="">
         <div class="card-body">
+            <div class="card-top">
+                <img src="{{top}}" alt="">
+            </div>
             <p class="card-brand">{{brand}}</p>
             <h5 class="card-title">{{name}}</h5>
             <div class="row justify-content-between card-bottom">
