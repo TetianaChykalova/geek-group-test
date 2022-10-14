@@ -156,9 +156,3 @@ if(sliderFilterPrice) {
     })
 }
 
-//console.log(sliderFilterPrice.noUiSlider.get()); --> Array [0: 'min', 1: 'max']
-
-// let minPrice = +sliderFilterPrice.noUiSlider.get()[0];
-// let maxPrice = +sliderFilterPrice.noUiSlider.get()[1];
-
-// sliderFilterPrice.noUiSlider.set([minPrice, maxPrice, true, true])
