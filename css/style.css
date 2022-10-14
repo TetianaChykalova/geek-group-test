@@ -4,12 +4,14 @@
 body {
     overflow-x: hidden;
 }
+
 .container-fluid {
     padding: 0 3px;
     max-width: 1320px;
     width: 100%;
     margin: 0 auto;
 }
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -22,6 +24,7 @@ body {
 .header__header {
     background: #CBDCFF;
 }
+
 .header__header-content {
     display: flex;
     flex-direction: row;
@@ -44,6 +47,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
+
 /*search*/
 .header__search {
     border: 2px solid #E0E3E3;
@@ -51,18 +55,21 @@ body {
     padding: 11px 0 11px 17px;
     width: 600px;
 }
+
 .header__search input {
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
     color: #5C5F60;
 }
+
 .header__search button {
     background: #fff;
     width: 16px;
     height: 16px;
     margin: 0 18px 0 0;
 }
+
 /*add order*/
 .header__add-order {
     background: #2D3132;
@@ -73,6 +80,7 @@ body {
     padding: 14px 0;
     width: 130px;
 }
+
 /*lang*/
 .header__land select {
     font-weight: 400;
@@ -82,11 +90,15 @@ body {
     background: #fff;
     padding-right: 5px;
 }
+
 /*user*/
-.header__user {}
+.header__user {
+}
+
 .header__user div {
     margin: 0 10px 0 0;
 }
+
 .header__user span {
     position: absolute;
     top: -13px;
@@ -102,11 +114,14 @@ body {
 }
 
 /*bottom part*/
-.header__bottom-content {}
+.header__bottom-content {
+}
+
 .header__bottom-content div {
     padding: 0 16px;
     transition: all 0.3s ease-in 0s;
 }
+
 .header__bottom-content div a {
     text-transform: uppercase;
     color: #444748;
@@ -115,6 +130,7 @@ body {
     flex-direction: column;
     padding: 16px 0 17px 0;
 }
+
 .header__bottom-content .active-nav {
     border-bottom: 2px #000 solid;
 }
@@ -130,12 +146,14 @@ main {
 .section-breadcrumb {
     margin: 0 0 40px 0;
 }
+
 .breadcrumb-item a {
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
     color: #2D3132;
 }
+
 .active-link {
     font-weight: 400;
     font-size: 12px;
@@ -165,25 +183,29 @@ main {
     background: #EFF1F1;
     padding: 30px 15px;
 }
+
 .accordion .accordion-button,
-.accordion .accordion-button .collapsed{
+.accordion .accordion-button .collapsed {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     color: #444748;
 }
+
 .accordion .accordion-body input {
     width: 17px;
     height: 17px;
     margin: 0 17px 0 0;
     accent-color: black;
 }
+
 .accordion .accordion-body label {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     color: #444748;
 }
+
 .accordion .accordion-body span {
     font-weight: 400;
     font-size: 14px;
@@ -191,6 +213,7 @@ main {
     color: #747778;
     margin: 0 0 0 auto;
 }
+
 .accordion .accordion-body div {
     display: flex;
     flex-direction: row;
@@ -200,12 +223,14 @@ main {
 .accordion .accordion-body .price__info {
     margin: 25px 0 0 0;
 }
+
 .accordion .accordion-body .price__info div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 0;
 }
+
 .accordion .accordion-body .price__info div p {
     margin: 0 0 10px 0;
     font-weight: 400;
@@ -213,6 +238,7 @@ main {
     line-height: 150%;
     color: #747778;
 }
+
 .accordion .accordion-body .price__info div span {
     font-weight: 400;
     font-size: 12px;
@@ -222,6 +248,7 @@ main {
     flex-direction: column;
     margin: 0;
 }
+
 .accordion .accordion-body .price__info div span:after {
     content: '';
     height: 1px;
@@ -236,15 +263,18 @@ main {
     border: none;
     box-shadow: none;
 }
+
 .noUi-connect {
     background: #8E9192;
 }
+
 .noUi-horizontal .noUi-handle {
     width: 16px;
     height: 16px;
     border: none;
     border-radius: 4px;
 }
+
 .noUi-handle .noUi-handle-lower,
 .noUi-handle .noUi-handle-upper {
     width: 16px;
@@ -253,18 +283,20 @@ main {
     border-radius: 4px;
     border: none;
 }
+
 .noUi-touch-area {
     width: 16px;
     height: 16px;
     background: #5C5F60;
     border-radius: 4px;
 }
+
 .noUi-handle:before,
 .noUi-handle:after {
     display: none;
 }
 
-    /*sort*/
+/*sort*/
 .article-sort {
     margin: 0 0 25px 0;
     display: flex;
@@ -272,6 +304,7 @@ main {
     justify-content: flex-end;
     align-items: center;
 }
+
 .article-sort label {
     font-weight: 400;
     font-size: 12px;
@@ -279,6 +312,7 @@ main {
     color: #5C5F60;
     margin: 0 12px 0 0;
 }
+
 .article-sort select {
     font-weight: 400;
     font-size: 12px;
@@ -298,35 +332,42 @@ main {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .card {
     flex: 0 1 32%;
     padding: 50px 20px 20px;
     margin: 0 0 24px 0;
     transition: all 0.3s ease-in 0s;
 }
+
 .card-img-top {
     width: 207px;
     height: 263px;
     object-fit: cover;
     margin: 0 auto;
 }
+
 .card-like {
     position: absolute;
     top: 30px;
     right: 30px;
     width: 20px;
 }
+
 .card-organic {
     position: absolute;
     top: 30px;
     left: 30px;
 }
+
 .card-body {
     padding: 0;
 }
+
 .card-not-top {
     height: 18px;
 }
+
 .card-brand {
     font-weight: 500;
     font-size: 10px;
@@ -335,6 +376,7 @@ main {
     text-transform: uppercase;
     margin: 16px 0 0 0;
 }
+
 .card-title {
     margin: 4px 0 0 0;
     font-weight: 400;
@@ -342,13 +384,16 @@ main {
     line-height: 150%;
     color: #2D3132;
 }
+
 .card-bottom {
     margin: 26px 0 0 0;
     padding: 0;
 }
+
 .card-bottom div {
     padding: 0;
 }
+
 .card-price,
 .card-sale {
     font-weight: 500;
@@ -357,6 +402,7 @@ main {
     color: #2D3132;
     margin: 0;
 }
+
 .price-with-sale {
     font-weight: 400;
     font-size: 12px;
@@ -365,16 +411,19 @@ main {
     color: #747778;
     margin: 0;
 }
+
 .card-geo {
     margin: 0 0 4px 0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
+
 .card-geo img {
     width: 8px;
     margin: 0 4px 0 0;
 }
+
 .card-geo p {
     font-weight: 400;
     font-size: 12px;
@@ -382,15 +431,18 @@ main {
     color: #2D3132;
     margin: 0;
 }
+
 .card-seller {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
+
 .card-seller img {
     width: 20px;
     margin: 0 8px 0 0;
 }
+
 .card-seller p {
     font-weight: 400;
     font-size: 14px;
@@ -405,6 +457,7 @@ main {
     justify-content: center;
     margin: 60px 0 115px 0;
 }
+
 .pages button {
     background: #fff;
     font-weight: 400;
@@ -414,14 +467,17 @@ main {
     padding: 7px 13px;
     margin: 0 10px 10px 0;
 }
+
 .pages-text {
     border: 1px solid #C4C7C7;
     border-radius: 100px;
 }
+
 .pages-num {
     border: 1px solid #C4C7C7;
     border-radius: 50%;
 }
+
 .pages-active {
     border: 2px solid #000;
 }
@@ -432,27 +488,33 @@ main {
     background: #EFF1F1;
     padding: 72px 0 38px 0;
 }
+
 .footer section {
     display: flex;
     flex-direction: column;
 }
+
 .footer__top {
     padding: 0 0 72px 0;
     margin: 0 0 38px 0;
     border-bottom: 1px solid #C4C7C7;
 }
+
 .footer_col {
     display: flex;
     flex-direction: column;
 }
+
 .footer_col a,
 .footer_col p {
     margin: 0 0 12px 0;
     color: #2D3132;
 }
+
 .footer_col a:last-child {
     margin: 0;
 }
+
 .footer__bottom p {
     margin: 0;
 }

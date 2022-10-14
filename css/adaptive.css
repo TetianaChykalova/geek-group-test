@@ -10,9 +10,11 @@
         padding: 50px 20px 20px;
         margin: 0 0 24px 0;
     }
+
     .header__search {
         width: 300px;
     }
+
     .header__logo {
         display: none;
     }
@@ -22,22 +24,27 @@
     .burger__menu {
         display: none;
     }
+
     .card:hover {
         transform: scale(105%);
         transition: all 0.3s ease-in 0s;
     }
+
     .header__bottom-content div:hover {
         transform: scale(110%);
         transition: all 0.3s ease-in 0s;
     }
 }
+
 @media (max-width: 767px) {
     .header__search {
         width: 250px;
     }
+
     body.overflow-hidden {
         overflow: hidden;
     }
+
     .burger__menu {
         background: #6d1dee;
         height: 60px;
@@ -52,6 +59,7 @@
         left: 0;
         z-index: 2;
     }
+
     .burger__line span,
     .burger__line:before,
     .burger__line:after {
@@ -63,15 +71,19 @@
         z-index: 5;
         position: fixed;
     }
+
     .burger__line:before {
         top: 15px;
     }
+
     .burger__line span {
         top: 25px;
     }
+
     .burger__line:after {
         top: 35px;
     }
+
     .header__bottom-content {
         display: flex;
         flex-direction: column;
@@ -85,48 +97,60 @@
         z-index: 1;
         transition: all 0.5s ease-in 0s;
     }
+
     .active {
         right: 0;
     }
+
     .header__bottom-content div {
         padding: 8px 16px;
     }
+
     .header__bottom-content div a {
         padding: 0;
     }
+
     .header__bottom-content .active-nav {
         border-bottom: none;
     }
-    .header__bottom-content .active-nav:after{
+
+    .header__bottom-content .active-nav:after {
         content: '';
         height: 2px;
         background: #000;
         width: 100%;
         margin: 5px 0 0 0;
     }
+
     .card {
         flex: 0 1 100%;
         padding: 50px 20px 20px;
         margin: 0 0 24px 0;
     }
+
     .header__top-content {
         flex-wrap: wrap;
     }
+
     .header__user {
         margin: 20px 0 0 0;
     }
+
     .pages {
         flex-wrap: wrap;
     }
+
     .footer {
         padding: 35px 0;
     }
+
     .footer__top {
         display: flex;
         flex-direction: column;
-        padding:0;
+        padding: 0;
         margin: 0 0 35px 0;
     }
+
     .footer__top div {
         margin: 0 0 35px 0;
     }
