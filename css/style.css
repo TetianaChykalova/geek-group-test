@@ -105,6 +105,7 @@ body {
 .header__bottom-content {}
 .header__bottom-content div {
     padding: 0 16px;
+    transition: all 0.3s ease-in 0s;
 }
 .header__bottom-content div a {
     text-transform: uppercase;
@@ -301,6 +302,7 @@ main {
     flex: 0 1 32%;
     padding: 50px 20px 20px;
     margin: 0 0 24px 0;
+    transition: all 0.3s ease-in 0s;
 }
 .card-img-top {
     width: 207px;

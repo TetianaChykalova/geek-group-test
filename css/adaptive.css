@@ -22,6 +22,14 @@
     .burger__menu {
         display: none;
     }
+    .card:hover {
+        transform: scale(105%);
+        transition: all 0.3s ease-in 0s;
+    }
+    .header__bottom-content div:hover {
+        transform: scale(110%);
+        transition: all 0.3s ease-in 0s;
+    }
 }
 @media (max-width: 767px) {
     .header__search {
