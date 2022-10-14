@@ -29,7 +29,17 @@ Auxiliary files - bootstrap.min.css and nouislider.min.css
 
 #### Used scripts:
 
-1. Adding product cards using the <template> and template generator Mustache.js
-2. Dependence of the price value on the position of the slider handle
-3. Collapsing the menu into a "burger menu" in the mobile version
+1.Adding product cards using the <template> and template generator Mustache.js
+
+2.Dependence of the price value on the position of the slider handle
+
+3.Collapsing the menu into a "burger menu" in the mobile version
+
+
+## Other
+Link to deploy by Netlify
+https://peaceful-granita-1a00a1.netlify.app/
+
+Link to other candidate skills
+https://tetiana-chykalova.click/
 
